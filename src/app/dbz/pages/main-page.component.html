@@ -1,0 +1,20 @@
+<h1>
+  DBZ Personajes
+</h1>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+
+    <!-- Agrego el (onDelete)="onDeleteCharacter($event) que me permite escuchar el evento -->
+    <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+
+  </div>
+  <div class="col">
+
+    <!-- Agrego el (onNewCharacter)="onNewCharacter($event)" que me permite escuchar el evento -->
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+
+  </div>
+</div>
